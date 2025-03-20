@@ -53,4 +53,70 @@ curl -X POST http://localhost:8000/products \
     "category": "electronics",
     "attributes": {
       "brand": "Samsung",
-      "model": "Galaxy S21
+      "model": "Galaxy S21",
+      "color": "Black"
+    }
+  }'
+```
+
+### 📋 List All Products
+
+```sh
+curl -X GET http://localhost:8000/products
+```
+
+### 🔍 Get Product Details
+
+```sh
+curl -X GET http://localhost:8000/products/{product_id}
+```
+
+### ✏️ Update a Product
+
+```sh
+curl -X PATCH http://localhost:8000/products/{product_id} \
+  -H "Content-Type: application/json" \
+  -d '{
+    "price": 749.99,
+    "attributes": {
+      "color": "Blue",
+      "storage": "128GB"
+    }
+  }'
+```
+
+### ❌ Delete a Product
+
+```sh
+curl -X DELETE http://localhost:8000/products/{product_id}
+```
+
+---
+
+## 🎯 Filtering Products
+
+### Get All Products
+
+```sh
+curl -X GET http://localhost:8000/products
+```
+
+### Filter by Category
+
+```sh
+curl -X GET "http://localhost:8000/products?category=electronics"
+```
+
+### Filter by Price Range
+
+```sh
+curl -X GET "http://localhost:8000/products?minPrice=500&maxPrice=1000"
+```
+
+### Combine Filters
+
+```sh
+curl -X GET "http://localhost:8000/products?category=electronics&minPrice=700"
+```
+
+🚀 Happy coding! 🎉
