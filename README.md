@@ -119,3 +119,30 @@ curl -X GET "http://localhost:8000/products?minPrice=500&maxPrice=1000"
 curl -X GET "http://localhost:8000/products?category=electronics&minPrice=700"
 ```
 
+---
+
+## 📄 Swagger Documentation
+
+If You Wanna To Use Apis in Swagger You Can Find Alll In This path:
+```
+Src/Controller/ProductController.php
+```
+
+A Sample : 
+```php
+/**
+ * @OA\Post(
+ *     path="/products",
+ *     summary="Create a new product",
+ *     @OA\RequestBody(
+ *         required=true,
+ *         @OA\JsonContent(ref="#/components/schemas/ProductCreateDTO")
+ *     ),
+ *     @OA\Response(
+ *         response=201,
+ *         description="Product created successfully",
+ *         @OA\JsonContent(ref="#/components/schemas/ProductDTO")
+ *     )
+ * )
+ */
+```
