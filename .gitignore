@@ -1,0 +1,14 @@
+/vendor/
+/node_modules/
+/storage/*.log
+.env
+.env.backup
+.phpunit.result.cache
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
+*.cache
+*.log 

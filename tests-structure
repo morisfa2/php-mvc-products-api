@@ -1,0 +1,24 @@
+tests/
+├── Unit/
+│   ├── Service/
+│   │   └── ProductServiceTest.php
+│   ├── Repository/
+│   │   └── MongoProductRepositoryTest.php
+│   └── DTO/
+│       └── ProductDTOTest.php
+├── Integration/
+│   └── Database/
+│       └── MongoConnectionTest.php
+├── Feature/
+│   └── Product/
+│       ├── CreateProductTest.php
+│       ├── UpdateProductTest.php
+│       ├── DeleteProductTest.php
+│       └── ListProductTest.php
+├── Http/
+│   └── Api/
+│       ├── ProductApiTest.php
+│       └── Traits/
+│           └── MakesHttpRequests.php
+├── TestCase.php
+└── bootstrap.php 
