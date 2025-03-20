@@ -119,4 +119,3 @@ curl -X GET "http://localhost:8000/products?minPrice=500&maxPrice=1000"
 curl -X GET "http://localhost:8000/products?category=electronics&minPrice=700"
 ```
 
-🚀 Happy coding! 🎉
